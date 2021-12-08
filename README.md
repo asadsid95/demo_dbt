@@ -3,7 +3,7 @@
 - created new model folder in /model and a .yml file for the source (can also describe models)
 - Source is Sf sample DB (snowflake_sample_data) & we provide all of its details (i.e. schema, tables, database, description) -- *could try adding more tables*
  -- Created model in which we used SQL and jinja to instruct to look for source and table with respective names and create model. It's known-practise to call the last CTE 'final' which will be used to select, to make the model
-
+2. Explored /target to find compiled version of sql that dbt executes. Main difference is the substitution of jinja template with information we placed in .yml files for sources in /model. *Helpful when debugging sql w/ jinja for mutliple CTEs, complex logic, and etc.
 ------------
 
 Welcome to your new dbt project!
