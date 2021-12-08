@@ -21,6 +21,11 @@
 - default is to materialize as 'view'
 - we can either change in dbt_project.yml or 
 - - in specific models by adding {{config...}} on the top
+6. Package management
+- adding packages 
+7. Doc generation
+- use `dbt doc generate` to create and `dbt doc serve` to locally host
+** Had to remove `packages.yml` and its corresponding folder due to current version of dbt being old - unsure on how to update to 1.0.0 **
 
 ------------
 
