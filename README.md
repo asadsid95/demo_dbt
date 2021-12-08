@@ -16,6 +16,7 @@
 - dbt ships w/ 4 tests (unique, not_null, accepted values, relationships); we used not_null)
 - running 'dbt test' fails test in '...first_dbt_model' due NULL value presence for a column that had not_null stated for test
 - - to resolve, either remove test case or change the test to filter out NULL
+- after addressing the change, first run and then test
 
 ------------
 
