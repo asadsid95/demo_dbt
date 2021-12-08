@@ -12,6 +12,10 @@
 - - adding to dbt_project.yml in / under models, '+schema: ...' however a prefix is concat. to our provided-name. To fix, we added a file in /macro addressing this
  **getting an error: 
  Runtime Error cannot import name 'SnowflakeOCSPAsn1Crypto' from partially initialized module 'snowflake.connector.ocsp_asn1crypto' (most likely due to a circular import) **
+4. Tests:
+- dbt ships w/ 4 tests (unique, not_null, accepted values, relationships); we used not_null)
+- running 'dbt test' fails test in '...first_dbt_model' due NULL value presence for a column that had not_null stated for test
+- - to resolve, either remove test case or change the test to filter out NULL
 
 ------------
 
