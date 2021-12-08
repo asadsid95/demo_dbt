@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: example_team_details
+    description: List of teams 
+
+    columns:
+      - name: name
+
+      - name: city
+        tests:
+          - is_city1_team
+
+      - name: state

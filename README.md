@@ -28,6 +28,8 @@
 ** Had to remove `packages.yml` and its corresponding folder due to current version of dbt being old - unsure on how to update to 1.0.0 **
 8. Seeds (CSV files w/ that can be referenced like models or table; Use cases: static data i.e. references (country codes w/ countries))
 - We first uploaded seed file to Sf then we referenced it in a model
+9. Custom schema test + overriding exisiting tests:
+- All tests are macros and need to be created with 'test_...' prefix; package dbt_utils contains most used ones so we may not need to recreate them
 ------------
 
 Welcome to your new dbt project!
