@@ -17,6 +17,10 @@
 - running 'dbt test' fails test in '...first_dbt_model' due NULL value presence for a column that had not_null stated for test
 - - to resolve, either remove test case or change the test to filter out NULL
 - after addressing the change, first run and then test
+5. Materializations (how dbt models are persisted in DWH)
+- default is to materialize as 'view'
+- we can either change in dbt_project.yml or 
+- - in specific models by adding {{config...}} on the top
 
 ------------
 
