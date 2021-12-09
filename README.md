@@ -30,6 +30,19 @@
 - We first uploaded seed file to Sf then we referenced it in a model
 9. Custom schema test + overriding exisiting tests:
 - All tests are macros and need to be created with 'test_...' prefix; package dbt_utils contains most used ones so we may not need to recreate them
+**Topics below were only watched, not coded along with tutorial**
+10. Project variables in models
+11. Hooks (for repeated steps, we use hooks)
+12. dbt docs with blocks
+13. Source freshness (think of SLAs)
+14. Query tags
+15. State method 
+16. Multi-repo design (adding git package from another repo instead of dbt Hub)
+17. Auditing dbt runs
+18. dbt in virtual environment
+19. Cleaning dbt project files
+20. Easy way to run/test
+21. Ephermal models
 ------------
 
 Welcome to your new dbt project!
